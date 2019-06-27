@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableViewCell" rowHeight="94" id="KGk-i7-Jjw" customClass="ProductTableViewCell" customModule="TableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-Ii-lvZ">
+                        <rect key="frame" x="8" y="8" width="43.5" height="20.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJh-pT-ZPX">
+                        <rect key="frame" x="8" y="28.5" width="37.5" height="57"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nib-Ck-6qA">
+                        <rect key="frame" x="386" y="29.5" width="40" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="pRN-Tj-KKD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                        <state key="normal" title="Like!">
+                            <color key="titleColor" red="1" green="0.36854553839999998" blue="0.55836358919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="aJh-pT-ZPX" firstAttribute="top" secondItem="Avc-Ii-lvZ" secondAttribute="bottom" id="7oG-MD-Tiy"/>
+                    <constraint firstItem="Avc-Ii-lvZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Lhj-eD-4BL"/>
+                    <constraint firstItem="aJh-pT-ZPX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NjK-L0-2di"/>
+                    <constraint firstAttribute="trailing" secondItem="nib-Ck-6qA" secondAttribute="trailing" constant="8" id="Ow1-wN-BeQ"/>
+                    <constraint firstItem="nib-Ck-6qA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RUG-iX-cr1"/>
+                    <constraint firstAttribute="bottom" secondItem="aJh-pT-ZPX" secondAttribute="bottom" constant="8" id="X0A-e3-M5x"/>
+                    <constraint firstItem="nib-Ck-6qA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Avc-Ii-lvZ" secondAttribute="trailing" constant="20" id="cmd-jF-iJy"/>
+                    <constraint firstItem="nib-Ck-6qA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aJh-pT-ZPX" secondAttribute="trailing" constant="20" id="f87-Vm-Vnr"/>
+                    <constraint firstItem="Avc-Ii-lvZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tFR-bx-bME"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="catLabel" destination="aJh-pT-ZPX" id="BZB-6d-rhj"/>
+                <outlet property="favButton" destination="nib-Ck-6qA" id="vFp-sp-c8d"/>
+                <outlet property="productNameLabel" destination="Avc-Ii-lvZ" id="ViD-CO-nE6"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="56.25"/>
+        </tableViewCell>
+    </objects>
+</document>
